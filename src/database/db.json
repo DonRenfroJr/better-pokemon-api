@@ -1,0 +1,781 @@
+{
+    "Pokemon": [
+        {
+            "id": 1,
+            "name": "bulbasaur",
+            "ability": "overgrow",
+            "base_experience": 64,
+            "url": "https://pokeapi.co/api/v2/pokemon/1/"
+        },
+        {
+            "id": 2, 
+            "name": "ivysaur",
+            "ability": "overgrow",
+            "base_experience": 142, 
+            "url": "https://pokeapi.co/api/v2/pokemon/2/"
+        },
+        {
+            "id": 3, 
+            "name": "venusaur",
+            "ability": "overgrow",
+            "base_experience": 263, 
+            "url": "https://pokeapi.co/api/v2/pokemon/3/"
+        },
+        {
+            "id": 4,
+            "name": "charmander",
+            "ability": "blaze",
+            "base_experience": 62, 
+            "url": "https://pokeapi.co/api/v2/pokemon/4/"
+        },
+        {
+            "id": 5,
+            "name": "charmeleon",
+            "ability": "blaze",
+            "base_experience": 142, 
+            "url": "https://pokeapi.co/api/v2/pokemon/5/"
+        },
+        {
+            "id": 6,
+            "name": "charizard",
+            "ability": "blaze",
+            "base_experience": 267, 
+            "url": "https://pokeapi.co/api/v2/pokemon/6/"
+        },
+        {
+            "id": 7,
+            "name": "squirtle",
+            "ability": "torrent",
+            "base_experience": 63, 
+            "url": "https://pokeapi.co/api/v2/pokemon/7/"
+        },
+        {
+            "id": 8,
+            "name": "wartortle",
+            "ability": "torrent",
+            "base_experience": 142, 
+            "url": "https://pokeapi.co/api/v2/pokemon/8/"
+        },
+        {
+            "id": 9,
+            "name": "blastoise",
+            "ability": "torrent",
+            "base_experience":265, 
+            "url": "https://pokeapi.co/api/v2/pokemon/9/"
+        },
+        {
+            "id": 10,
+            "name": "caterpie",
+            "ability": "sheild-dust",
+            "base_experience": 39, 
+            "url": "https://pokeapi.co/api/v2/pokemon/10/"
+        },
+        {
+            "id": 11,
+            "name": "metapod",
+            "ability": "shed-skin",
+            "base_experience": 72, 
+            "url": "https://pokeapi.co/api/v2/pokemon/11/"
+        },
+        {
+            "id": 12,
+            "name": "butterfree",
+            "ability": "compound-eyes",
+            "base_experience": 198,
+            "url": "https://pokeapi.co/api/v2/pokemon/12/"
+        },
+        {
+            "id": 13,
+            "name": "weedle",
+            "ability": "sheild-dust",
+            "base_experience": 39,
+            "url": "https://pokeapi.co/api/v2/pokemon/13/"
+        },
+        {
+            "id": 14,
+            "name": "kakuna",
+            "ability": "shed-skin",
+            "base_experience": 113,
+            "url": "https://pokeapi.co/api/v2/pokemon/14/"
+        },
+        {
+            "id": 15,
+            "name": "beedrill",
+            "ability": "swarm",
+            "base_experience": 178,
+            "url": "https://pokeapi.co/api/v2/pokemon/15/"
+        },
+        {
+            "id": 16,
+            "name": "pidgey",
+            "ability": "keen-eye",
+            "base_experience": 50,
+            "url": "https://pokeapi.co/api/v2/pokemon/16/"
+        },
+        {
+            "id": 17,
+            "name": "pidgeotto",
+            "ability": "keen-eye",
+            "base_experience": 122,
+            "url": "https://pokeapi.co/api/v2/pokemon/17/"
+        },
+        {
+            "id": 18,
+            "name": "pidgeot",
+            "ability": "keen-eye",
+            "base_experience": 216,
+            "url": "https://pokeapi.co/api/v2/pokemon/18/"
+        },
+        {
+            "id": 19,
+            "name": "rattata",
+            "ability": "run-away",
+            "base_experience": 51,
+            "url": "https://pokeapi.co/api/v2/pokemon/19/"
+        },
+        {
+            "id": 20,
+            "name": "raticate",
+            "ability": "run-away",
+            "base_experience": 145,
+            "url": "https://pokeapi.co/api/v2/pokemon/20/"
+        },
+        {
+            "id": 21,
+            "name": "spearow",
+            "ability": "keen-eye",
+            "base_experience": 52,
+            "url": "https://pokeapi.co/api/v2/pokemon/21/"
+        },
+        {
+            "id": 22,
+            "name": "fearow",
+            "ability": "keen-eye",
+            "base_experience": 155,
+            "url": "https://pokeapi.co/api/v2/pokemon/22/"
+        },
+        {
+            "id": 23,
+            "name": "ekans",
+            "ability": "intimidate",
+            "base_experience": 58,
+            "url": "https://pokeapi.co/api/v2/pokemon/23/"
+        },
+        {
+            "id": 24,
+            "name": "arbok",
+            "ability": "intimidate",
+            "base_experience": 157,
+            "url": "https://pokeapi.co/api/v2/pokemon/24/"
+        },
+        {
+            "id": 25,
+            "name": "pikachu",
+            "ability": "static",
+            "base_experience": 112,
+            "url": "https://pokeapi.co/api/v2/pokemon/25/"
+        },
+        {
+            "id": 26,
+            "name": "raichu",
+            "ability": "static",
+            "base_experience": 243,
+            "url": "https://pokeapi.co/api/v2/pokemon/26/"
+        },
+        {
+            "id": 27,
+            "name": "sandshrew",
+            "ability": "sand-veil",
+            "base_experience": 60,
+            "url": "https://pokeapi.co/api/v2/pokemon/27/"
+        },
+        {
+            "id": 28,
+            "name": "sandslash",
+            "ability": "sand-veil",
+            "base_experience": 158,
+            "url": "https://pokeapi.co/api/v2/pokemon/28/"
+        },
+        {
+            "id": 29,
+            "name": "nidoran-f",
+            "ability": "poison-point",
+            "base_experience": 55,
+            "url": "https://pokeapi.co/api/v2/pokemon/29/"
+        },
+        {
+            "id": 30,
+            "name": "nidorina",
+            "ability": "poison-point",
+            "base_experience": 128,
+            "url": "https://pokeapi.co/api/v2/pokemon/30/"
+        },
+        {
+            "id": 31,
+            "name": "nidoqueen",
+            "ability": "poison-point",
+            "base_experience": 253,
+            "url": "https://pokeapi.co/api/v2/pokemon/31/"
+        },
+        {
+            "id": 32,
+            "name": "nidoran-m",
+            "ability": "poison-point",
+            "base_experience": 55,
+            "url": "https://pokeapi.co/api/v2/pokemon/32/"
+        },
+        {
+            "id": 33,
+            "name": "nidorino",
+            "ability": "poison-point",
+            "base_experience": 128,
+            "url": "https://pokeapi.co/api/v2/pokemon/33/"
+        },
+        {
+            "id": 34,
+            "name": "nidoking",
+            "ability": "poison-point",
+            "base_experience": 253,
+            "url": "https://pokeapi.co/api/v2/pokemon/34/"
+        },
+        {
+            "id": 35,
+            "name": "clefairy",
+            "ability": "cute-charm",
+            "base_experience": 113,
+            "url": "https://pokeapi.co/api/v2/pokemon/35/"
+        },
+        {
+            "id": 36,
+            "name": "clefable",
+            "ability": "cute-charm",
+            "base_experience": 242,
+            "url": "https://pokeapi.co/api/v2/pokemon/36/"
+        },
+        {
+            "id": 37,
+            "name": "vulpix",
+            "ability": "flash-fire",
+            "base_experience": 60,
+            "url": "https://pokeapi.co/api/v2/pokemon/37/"
+        },
+        {
+            "id": 38,
+            "name": "ninetales",
+            "ability": "flash-fire",
+            "base_experience": 177,
+            "url": "https://pokeapi.co/api/v2/pokemon/38/"
+        },
+        {
+            "id": 39,
+            "name": "jigglypuff",
+            "ability": "cute-charm",
+            "base_experience": 95,
+            "url": "https://pokeapi.co/api/v2/pokemon/39/"
+        },
+        {
+            "id": 40,
+            "name": "wigglytuff",
+            "ability": "cute-charm",
+            "base_experience": 218,
+            "url": "https://pokeapi.co/api/v2/pokemon/40/"
+        },
+        {
+            "id": 41,
+            "name": "zubat",
+            "ability": "inner-focus",
+            "base_experience": 49,
+            "url": "https://pokeapi.co/api/v2/pokemon/41/"
+        },
+        {
+            "id": 42,
+            "name": "golbat",
+            "ability": "inner-focus",
+            "base_experience": 159,
+            "url": "https://pokeapi.co/api/v2/pokemon/42/"
+        },
+        {
+            "id": 43,
+            "name": "oddish",
+            "ability": "chlorophyll",
+            "base_experience": 64,
+            "url": "https://pokeapi.co/api/v2/pokemon/43/"
+        },
+        {
+            "id": 44,
+            "name": "gloom",
+            "ability": "chlorophyll",
+            "base_experience": 138,
+            "url": "https://pokeapi.co/api/v2/pokemon/44/"
+        },
+        {
+            "id": 45,
+            "name": "vileplume",
+            "ability": "chlorophyll",
+            "base_experience": 245,
+            "url": "https://pokeapi.co/api/v2/pokemon/45/"
+        },
+        {
+            "id": 46,
+            "name": "paras",
+            "ability": "effect-spore",
+            "base_experience": 57,
+            "url": "https://pokeapi.co/api/v2/pokemon/46/"
+        },
+        {
+            "id": 47,
+            "name": "parasect",
+            "ability": "effect-spore",
+            "base_experience": 142,
+            "url": "https://pokeapi.co/api/v2/pokemon/47/"
+        },
+        {
+            "id": 48,
+            "name": "venonat",
+            "ability": "compound-eyes",
+            "base_experience": 61,
+            "url": "https://pokeapi.co/api/v2/pokemon/48/"
+        },
+        {
+            "id": 49,
+            "name": "venomoth",
+            "ability": "shield-dust",
+            "base_experience": 158,
+            "url": "https://pokeapi.co/api/v2/pokemon/49/"
+        },
+        {
+            "id": 50,
+            "name": "diglett",
+            "ability": "sand-veil",
+            "base_experience": 53,
+            "url": "https://pokeapi.co/api/v2/pokemon/50/"
+        },
+        {
+            "id": 51,
+            "name": "dugtrio",
+            "ability": "sand-veil",
+            "base_experience": 149,
+            "url": "https://pokeapi.co/api/v2/pokemon/51/"
+        },
+        {
+            "id": 52,
+            "name": "meowth",
+            "ability": "pickup",
+            "base_experience": 58,
+            "url": "https://pokeapi.co/api/v2/pokemon/52/"
+        },
+        {
+            "id": 53,
+            "name": "persian",
+            "ability": "limber",
+            "base_experience": 154,
+            "url": "https://pokeapi.co/api/v2/pokemon/53/"
+        },
+        {
+            "id": 54,
+            "name": "psyduck",
+            "ability": "damp",
+            "base_experience": 64,
+            "url": "https://pokeapi.co/api/v2/pokemon/54/"
+        },
+        {
+            "id": 55,
+            "name": "golduck",
+            "ability": "damp",
+            "base_experience": 175,
+            "url": "https://pokeapi.co/api/v2/pokemon/55/"
+        },
+        {
+            "id": 56,
+            "name": "mankey",
+            "ability": "vital-spirit",
+            "base_experience": 61,
+            "url": "https://pokeapi.co/api/v2/pokemon/56/"
+        },
+        {
+            "id": 57,
+            "name": "primeape",
+            "ability": "vital-spirit",
+            "base_experience": 159,
+            "url": "https://pokeapi.co/api/v2/pokemon/57/"
+        },
+        {
+            "id": 58,
+            "name": "growlithe",
+            "ability": "intimidate",
+            "base_experience": 70,
+            "url": "https://pokeapi.co/api/v2/pokemon/58/"
+        },
+        {
+            "id": 59,
+            "name": "arcanine",
+            "ability": "intimidate",
+            "base_experience": 194,
+            "url": "https://pokeapi.co/api/v2/pokemon/59/"
+        },
+        {
+            "id": 60,
+            "name": "poliwag",
+            "ability": "water-absorb",
+            "base_experience": 60,
+            "url": "https://pokeapi.co/api/v2/pokemon/60/"
+        },
+        {
+            "id": 61,
+            "name": "poliwhirl",
+            "ability": "water-absorb",
+            "base_experience": 135,
+            "url": "https://pokeapi.co/api/v2/pokemon/61/"
+        },
+        {
+            "id": 62,
+            "name": "poliwrath",
+            "ability": "water-absorb",
+            "base_experience": 255,
+            "url": "https://pokeapi.co/api/v2/pokemon/62/"
+        },
+        {
+            "id": 63,
+            "name": "abra",
+            "ability": "synchronize",
+            "base_experience": 62,
+            "url": "https://pokeapi.co/api/v2/pokemon/63/"
+        },
+        {
+            "id": 64,
+            "name": "kadabra",
+            "ability": "synchronize",
+            "base_experience": 140,
+            "url": "https://pokeapi.co/api/v2/pokemon/64/"
+        },
+        {
+            "id": 65,
+            "name": "alakazam",
+            "ability": "synchronize",
+            "base_experience": 250,
+            "url": "https://pokeapi.co/api/v2/pokemon/65/"
+        },
+        {
+            "id": 66,
+            "name": "machop",
+            "ability": "guts",
+            "base_experience": 61,
+            "url": "https://pokeapi.co/api/v2/pokemon/66/"
+        },
+        {
+            "id": 67,
+            "name": "machoke",
+            "ability": "guts",
+            "base_experience": 142,
+            "url": "https://pokeapi.co/api/v2/pokemon/67/"
+        },
+        {
+            "id": 68,
+            "name": "machamp",
+            "ability": "guts",
+            "base_experience": 253,
+            "url": "https://pokeapi.co/api/v2/pokemon/68/"
+        },
+        {
+            "id": 69,
+            "name": "bellsprout",
+            "ability": "chlorophyll",
+            "base_experience": 60,
+            "url": "https://pokeapi.co/api/v2/pokemon/69/"
+        },
+        {
+            "id": 70,
+            "name": "weepinbell",
+            "ability": "chlorophyll",
+            "base_experience": 137,
+            "url": "https://pokeapi.co/api/v2/pokemon/70/"
+        },
+        {
+            "id": 71,
+            "name": "victreebel",
+            "ability": "chlorophyll",
+            "base_experience": 221,
+            "url": "https://pokeapi.co/api/v2/pokemon/71/"
+        },
+        {
+            "id": 72,
+            "name": "tentacool",
+            "ability": "clear-body",
+            "base_experience": 67,
+            "url": "https://pokeapi.co/api/v2/pokemon/72/"
+        },
+        {
+            "id": 73,
+            "name": "tentacruel",
+            "ability": "clear-body",
+            "base_experience": 180,
+            "url": "https://pokeapi.co/api/v2/pokemon/73/"
+        },
+        {
+            "id": 74,
+            "name": "geodude",
+            "ability": "rock-head",
+            "base_experience": 60,
+            "url": "https://pokeapi.co/api/v2/pokemon/74/"
+        },
+        {
+            "id": 75,
+            "name": "graveler",
+            "ability": "rock-head",
+            "base_experience": 137,
+            "url": "https://pokeapi.co/api/v2/pokemon/75/"
+        },
+        {
+            "id": 76, 
+            "name": "golem",
+            "ability": "rock-head",
+            "base_experience": 223,
+            "url": "https://pokeapi.co/api/v2/pokemon/76/"
+        },
+        {
+            "id": 77,
+            "name": "ponyta",
+            "ability": "run-away",
+            "base_experience": 82,
+            "url": "https://pokeapi.co/api/v2/pokemon/77/"
+        },
+        {
+            "id": 78,
+            "name": "rapidash",
+            "ability": "run-away",
+            "base_experience": 175,
+            "url": "https://pokeapi.co/api/v2/pokemon/78/"
+        },
+        {
+            "id": 79,
+            "name": "slowpoke",
+            "ability": "oblivious",
+            "base_experience": 63,
+            "url": "https://pokeapi.co/api/v2/pokemon/79/"
+        },
+        {
+            "id": 80,
+            "name": "slowbro",
+            "ability": "oblivious",
+            "base_experience": 172,
+            "url": "https://pokeapi.co/api/v2/pokemon/80/"
+        },
+        {
+            "id": 81,
+            "name": "magnemite",
+            "ability": "magnet-pull",
+            "base_experience": 65,
+            "url": "https://pokeapi.co/api/v2/pokemon/81/"
+        },
+        {
+            "id": 82,
+            "name": "magneton",
+            "ability": "magnet-pull",
+            "base_experience": 163,
+            "url": "https://pokeapi.co/api/v2/pokemon/82/"
+        },
+        {
+            "id": 83,
+            "name": "farfetchd",
+            "ability": "keen-eye",
+            "base_experience": 132,
+            "url": "https://pokeapi.co/api/v2/pokemon/83/"
+        },
+        {
+            "id": 84,
+            "name": "doduo",
+            "ability": "run-away",
+            "base_experience": 62,
+            "url": "https://pokeapi.co/api/v2/pokemon/84/"
+        },
+        {
+            "id": 85,
+            "name": "dodrio",
+            "ability": "run-away",
+            "base_experience": 165,
+            "url": "https://pokeapi.co/api/v2/pokemon/85/"
+        },
+        {
+            "id": 86,
+            "name": "seel",
+            "ability": "thick-fat",
+            "base_experience": 65,
+            "url": "https://pokeapi.co/api/v2/pokemon/86/"
+        },
+        {
+            "id": 87,
+            "name": "dewgong",
+            "ability": "thick-fat",
+            "base_experience": 166,
+            "url": "https://pokeapi.co/api/v2/pokemon/87/"
+        },
+        {
+            "id": 88,
+            "name": "grimer",
+            "ability": "stench",
+            "base_experience": 65,
+            "url": "https://pokeapi.co/api/v2/pokemon/88/"
+        },
+        {
+            "id": 89,
+            "name": "muk",
+            "ability": "stench",
+            "base_experience": 175,
+            "url": "https://pokeapi.co/api/v2/pokemon/89/"
+        },
+        {
+            "id": 90,
+            "name": "shellder",
+            "ability": "shell-armor",
+            "base_experience": 61,
+            "url": "https://pokeapi.co/api/v2/pokemon/90/"
+        },
+        {
+            "id": 91,
+            "name": "cloyster",
+            "ability": "shell-armor",
+            "base_experience": 184,
+            "url": "https://pokeapi.co/api/v2/pokemon/91/"
+        },
+        {
+            "id": 92,
+            "name": "gastly",
+            "ability": "levitate",
+            "base_experience": 62,
+            "url": "https://pokeapi.co/api/v2/pokemon/92/"
+        },
+        {
+            "id": 93,
+            "name": "haunter",
+            "ability": "levitate",
+            "base_experience": 142,
+            "url": "https://pokeapi.co/api/v2/pokemon/93/"
+        },
+        {
+            "id": 94,
+            "name": "gengar",
+            "ability": "cursed-body",
+            "base_experience": 250,
+            "url": "https://pokeapi.co/api/v2/pokemon/94/"
+        },
+        {
+            "id": 95,
+            "name": "onix",
+            "ability": "rock-head",
+            "base_experience": 77,
+            "url": "https://pokeapi.co/api/v2/pokemon/95/"
+        },
+        {
+            "id": 96,
+            "name": "drowzee",
+            "ability": "insomnia",
+            "base_experience": 66,
+            "url": "https://pokeapi.co/api/v2/pokemon/96/"
+        },
+        {
+            "id": 97,
+            "name": "hypno",
+            "ability": "insomnia",
+            "base_experience": 169,
+            "url": "https://pokeapi.co/api/v2/pokemon/97/"
+        },
+        {
+            "id": 98,
+            "name": "krabby",
+            "ability": "hyper-cutter",
+            "base_experience": 65,
+            "url": "https://pokeapi.co/api/v2/pokemon/98/"
+        },
+        {
+            "id": 99,
+            "name": "kingler",
+            "ability": "hyper-cutter",
+            "base_experience": 166,
+            "url": "https://pokeapi.co/api/v2/pokemon/99/"
+        },
+        {
+            "id": 100,
+            "name": "voltorb",
+            "ability": "soundproof",
+            "base_experience": 66,
+            "url": "https://pokeapi.co/api/v2/pokemon/100/"
+        },
+        {
+            "id": 101,
+            "name": "electrode",
+            "ability": "soundproof",
+            "base_experience": 172,
+            "url": "https://pokeapi.co/api/v2/pokemon/101/"
+        },
+        {
+            "id": 102,
+            "name": "exeggcute",
+            "ability": "chlorophyll",
+            "base_experience": 65,
+            "url": "https://pokeapi.co/api/v2/pokemon/102/"
+        },
+        {
+            "id": 103,
+            "name": "exeggutor",
+            "ability": "chlorophyll",
+            "base_experience": 186,
+            "url": "https://pokeapi.co/api/v2/pokemon/103/"
+        },
+        {
+            "id": 104,
+            "name": "cubone",
+            "ability": "rock-head",
+            "base_experience": 64,
+            "url": "https://pokeapi.co/api/v2/pokemon/104/"
+        },
+        {
+            "id": 105,
+            "name": "marowak",
+            "ability": "rock-head",
+            "base_experience": 149,
+            "url": "https://pokeapi.co/api/v2/pokemon/105/"
+        },
+        {
+            "id": 106,
+            "name": "hitmonlee",
+            "ability": "limber",
+            "base_experience": 159,
+            "url": "https://pokeapi.co/api/v2/pokemon/106/"
+        },
+        {
+            "id": 107,
+            "name": "hitmonchan",
+            "ability": "keen-eye",
+            "base_experience": 159,
+            "url": "https://pokeapi.co/api/v2/pokemon/107/"
+        },
+        {
+                "id": 108,
+            "name": "lickitung",
+            "ability": "own-tempo",
+            "base_experience": 77,
+            "url": "https://pokeapi.co/api/v2/pokemon/108/"
+        },
+        {
+            "id": 109,
+            "name": "koffing",
+            "ability": "levitate",
+            "base_experience": 68,
+            "url": "https://pokeapi.co/api/v2/pokemon/109/"
+        },
+        {
+            "id": 110,
+            "name": "weezing",
+            "ability": "levitate",
+            "base_experience": 172,
+            "url": "https://pokeapi.co/api/v2/pokemon/110/"
+        },    
+        {
+            "id": 111,
+            "name": "necrozma",
+            "ability": "prism-armor",
+            "base_experience": 300,
+            "url": "https://pokeapi.co/api/v2/pokemon/800/"
+        }
+    ]
+}
