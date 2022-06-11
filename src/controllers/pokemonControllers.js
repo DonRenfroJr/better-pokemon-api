@@ -1,21 +1,28 @@
+const pokemonService = require("../services/pokemonServices");
+
 const getAllPokemon = (req, res) => {
+    const allPokemon = pokemonService.getAllPokemon();
     res.send("Get all Pokemon");
 };
 
 const getOnePokemon = (req, res) => {
-res.send("Get an existing Pokemon");
+    const pokemon = pokemonService.getOnePokemon();
+    res.send("Get an existing Pokemon");
 };
 
 const createNewPokemon = (req, res) => {
-res.send("Create a new Pokemon");
+    const createdPokemon = pokemonService.createNewPokemon();
+    res.send("Create a new Pokemon");
 };
 
 const updateOnePokemon = (req, res) => {
-res.send("Update an existing Pokemon");
+    const updatePokemon = pokemonService.updateOnePokemon();
+    res.send("Update an existing Pokemon");
 };
 
 const deleteOnePokemon = (req, res) => {
-res.send("Delete an existing Pokemon");
+    pokemonService.deleteOnePokemon();
+    res.send("Delete an existing Pokemon");
 };
 
 module.exports = {
