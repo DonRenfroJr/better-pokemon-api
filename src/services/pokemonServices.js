@@ -1,5 +1,8 @@
+const Pokemon = require("../database/Pokemon");
+
 const getAllPokemon = () => {
-    return;
+    const allPokemon = Pokemon.getAllPokemon();
+    return allPokemon;
 };
 
 const getOnePokemon = () => {

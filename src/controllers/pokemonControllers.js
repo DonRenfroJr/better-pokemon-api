@@ -2,17 +2,34 @@ const pokemonService = require("../services/pokemonServices");
 
 const getAllPokemon = (req, res) => {
     const allPokemon = pokemonService.getAllPokemon();
-    res.send("Get all Pokemon");
+    res.send({ status: "OK", data: allPokemon});
 };
 
-const getOnePokemon = (req, res) => {
+const getOnePokemon = (req, res) => {    
     const pokemon = pokemonService.getOnePokemon();
     res.send("Get an existing Pokemon");
 };
 
 const createNewPokemon = (req, res) => {
-    const createdPokemon = pokemonService.createNewPokemon();
-    res.send("Create a new Pokemon");
+    const { body } = req;
+    if (
+        !body.id ||
+        !body.name ||
+        !body.ability ||
+        !body.base_experience ||
+        !body.url
+    ) {
+        return;
+    }
+    const newPokemon = {
+        id: body.id,
+        name: body.name,
+        ability: body.ability,
+        base_experience: body.base_experience,
+        url: body.url,
+    };
+    const createdPokemon = pokemonService.createNewPokemon(newPokemon);
+    res.status(201).send({ status: "OK", data: createdPokemon});
 };
 
 const updateOnePokemon = (req, res) => {
