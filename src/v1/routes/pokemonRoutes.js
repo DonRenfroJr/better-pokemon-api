@@ -1,24 +1,16 @@
 const express = require("express");
+const pokemonController = require("../../controllers/pokemonControllers");
+
 const router = express.Router();
 
-router.get("/", (req, res) => {
-    res.send("Get all Pokemon");
-});
+router.get("/", pokemonController.getAllPokemon);
 
-router.get("/:pokemonId", (req, res) => {
-    res.send("Get an existing Pokemon");
-});
+router.get("/:pokemonId", pokemonController.getOnePokemon);
 
-router.post("/", (req, res) => {
-    res.send("Create a new Pokemon");
-});
+router.post("/", pokemonController.createNewPokemon);
 
-router.patch("/:pokemonId", (req, res) => {
-    res.send("Update an existing Pokemon");
-});
+router.patch("/:pokemonId", pokemonController.updateOnePokemon);
 
-router.delete("/:pokemonId", (req, res) => {
-    res.send("Delete an existing Pokemon");
-});
+router.delete("/:pokemonId", pokemonController.deleteOnePokemon);
 
 module.exports = router;
