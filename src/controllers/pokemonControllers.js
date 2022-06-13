@@ -1,4 +1,5 @@
 const pokemonService = require("../services/pokemonServices");
+//const DB = require("./database/db.json");
 
 const getAllPokemon = (req, res) => {
     const { ability } = req.query;
@@ -14,13 +15,13 @@ const getAllPokemon = (req, res) => {
 
 const getOnePokemon = (req, res) => {    
     const {
-        params: {pokemonId},
+        params: { pokemonId },
     } = req;
     if (!pokemonId) {
         return;
     }    
-    const pokemon = pokemonService.getOnePokemon();
-    res.send({ status: "Ok", data: pokemon});
+    const pokemon = pokemonService.getOnePokemon(pokemonId);
+    res.send({ satus: "111 entries", data: pokemon});
 };
 
 const createNewPokemon = (req, res) => {

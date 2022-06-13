@@ -6,18 +6,18 @@ const getAllPokemon = (filterParams) => {
     try {
         let pokemon = DB.Pokemon;
         if (filterParams.ability) {
-            return DB.Pokemon.filter((workout) =>
-            pokemon.ability.toLowerCase().includes(filterParams.ability)
+            return DB.Pokemon.filter((Pokemon) =>
+            Pokemon.ability.toLowerCase().includes(filterParams.ability)
             );
         }
-        return DB.Pokemon;
+        return pokemon;
     }   catch (error) {
         throw { status: 500, message: error };
     }
 };
 
 const getOnePokemon = (pokemonId) => {
-    const pokemon = DB.pokemon.find((pokemon) => pokemon.id === pokemonId);
+    const pokemon = DB.Pokemon.find((Pokemon) => Pokemon.id === pokemonId);
     if (!pokemon) {
         return;
     }
@@ -26,7 +26,7 @@ const getOnePokemon = (pokemonId) => {
 
 const createNewPokemon = (newPokemon) => {
     const isAlreadyAdded =
-        DB.Pokemon.findIndex((pokemon) => pokemon.name === newPokemon.name) > -1;
+        DB.Pokemon.findIndex((Pokemon) => Pokemon.name === newPokemon.name) > -1;
     if (isAlreadyAdded) {
         throw {
             status: 400,
@@ -43,30 +43,30 @@ const createNewPokemon = (newPokemon) => {
 };
 
 const updateOnePokemon = (pokemonId, changes) => {
-    const indexForUpdate = DB.pokemon.findIndex(
-        (pokemon) => pokemon.id === pokemonId
+    const indexForUpdate = DB.Pokemon.findIndex(
+        (Pokemon) => Pokemon.id === pokemonId
     );
     if (indexForUpdate === -1) {
         return;
     }
     const updatedPokemon = {
-        ...DB.pokemon[indexForUpdate],
+        ...DB.Pokemon[indexForUpdate],
         ...changes,
         updatedAt: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
     };
-    DB.pokemon[indexForUpdate] = updatedPokemon;
+    DB.Pokemon[indexForUpdate] = updatedPokemon;
     saveToDatabase(DB);
     return updatedPokemon;
 };
 
 const deleteOnePokemon = (pokemonId) => {
-    const indexForDeletion = DB.pokemon.findIndex(
-        (pokemon) => pokemon.id === pokemonId
+    const indexForDeletion = DB.Pokemon.findIndex(
+        (Pokemon) => Pokemon.id === pokemonId
     );
     if (indexForDeletion === -1) {
         return;
     }
-    DB.pokemon.splice(indexForDeletion, 1);
+    DB.Pokemon.splice(indexForDeletion, 1);
     saveToDatabase(DB);
 };
 
