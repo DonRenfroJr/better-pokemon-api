@@ -1,10 +1,28 @@
 const pokemonService = require("../services/pokemonServices");
-//const DB = require("./database/db.json");
+
 
 const getAllPokemon = (req, res) => {
     const { ability } = req.query;
     try {
         const allPokemon = pokemonService.getAllPokemon({ ability });
+        res.send({ status: "OK", data: allPokemon});
+    }   catch (error){
+        res
+            .status(error?.status || 500)
+            .send({ status: "FAILED", data: { error: error?.message || error } });
+    }
+    const { name } = req.query;
+    try {
+        const allPokemon = pokemonService.getAllPokemon({ name });
+        res.send({ status: "OK", data: allPokemon});
+    }   catch (error){
+        res
+            .status(error?.status || 500)
+            .send({ status: "FAILED", data: { error: error?.message || error } });
+    }
+    const { base_experience } = req.query;
+    try {
+        const allPokemon = pokemonService.getAllPokemon({ base_experience });
         res.send({ status: "OK", data: allPokemon});
     }   catch (error){
         res
@@ -18,10 +36,21 @@ const getOnePokemon = (req, res) => {
         params: { pokemonId },
     } = req;
     if (!pokemonId) {
-        return;
-    }    
-    const pokemon = pokemonService.getOnePokemon(pokemonId);
-    res.send({ satus: "111 entries", data: pokemon});
+        res
+        .status(400)
+        .send({
+            status: "FAILED",
+            data: { error: "Parameter ':pokemonId' can not be empty"},
+        });
+    } 
+    try {
+        const pokemon = pokemonService.getOnePokemon(pokemonId);
+        res.send({ status: "OK", data: pokemon });
+    }   catch (error) {
+        res
+            .status(error?.status || 500)
+            .send({ status: "FAILED", data: { error: error?.message || error } });
+    }
 };
 
 const createNewPokemon = (req, res) => {
@@ -66,10 +95,21 @@ const updateOnePokemon = (req, res) => {
         params: {pokemonId},
     } = req;
     if (!pokemonId) {
-        return;
-    }    
-    const updatedPokemon = pokemonService.updateOnePokemon(pokemonId, body);
-    res.send({ status: "Ok", data: updatedPokemon });
+        res
+        .status(400)
+        .send({
+            status: "FAILED",
+            data: { error: "Parameter ':pokemonId' can not be empty" },
+        });
+    }
+    try {
+        const updatedPokemon = pokemonService.updateOnePokemon(pokemonId, body);
+        res.send({ status: "OK", data: updatedPokemon });
+    } catch (error) {
+        res
+        .status(error?.status || 500)
+        .send({ status: "FAILED", data: { error: error?.message || error } });
+    }
 };
 
 const deleteOnePokemon = (req, res) => {
@@ -77,10 +117,22 @@ const deleteOnePokemon = (req, res) => {
         params: {pokemonId},
     } = req;
     if (!pokemonId) {
-        return;
-    }    
-    pokemonService.deleteOnePokemon(pokemonId);
-    res.status(204).send({ status: "Ok"});
+        res
+            .status(400)
+            .send({
+                status: "FAILED",
+                data: { error: "Parameter ':pokemonId' can not be empty" },
+            });
+    }
+    try {
+        pokemonService.deleteOnePokemon(pokemonId);
+        res.status(204).send({ status: "OK" });
+        
+    }   catch (error) {
+        res
+            .status(error?.status || 500)
+            .send({ status: "FAILED", data: { error: error?.message || error } });
+    }
 };
 
 module.exports = {

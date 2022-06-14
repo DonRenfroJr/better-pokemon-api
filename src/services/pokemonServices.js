@@ -13,8 +13,12 @@ const getAllPokemon = (filterParams) => {
 };
 
 const getOnePokemon = (pokemonId) => {
-    const pokemon = Pokemon.getOnePokemon(pokemonId);
-    return pokemon;
+    try {
+        const pokemon = Pokemon.getOnePokemon(pokemonId);
+        return pokemon;
+    }   catch (error) {
+        throw error;
+    }
 };
 
 const createNewPokemon = (newPokemon) => {
@@ -33,12 +37,20 @@ const createNewPokemon = (newPokemon) => {
 };
 
 const updateOnePokemon = (pokemonId, changes) => {
-    const updatedPokemon = Pokemon.updateOnePokemon(pokemonId, changes);
-    return updatedPokemon;
+    try {
+        const updatedPokemon = Pokemon.updateOnePokemon(pokemonId, changes);
+        return updatedPokemon;
+    }   catch (error) {
+        throw error;
+    }
 };
 
 const deleteOnePokemon = (pokemonId) => {
-    Pokemon.deleteOnePokemon(pokemonId);
+    try {
+        Pokemon.deleteOnePokemon(pokemonId);
+    }   catch (error) {
+        throw error;
+    }
 };
 
 module.exports = {
