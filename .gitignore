@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+.package-lock.js
+
 
 # testing
 /coverage
@@ -19,3 +21,5 @@
 .env.production.local
 
 npm-debug.log*
+
+

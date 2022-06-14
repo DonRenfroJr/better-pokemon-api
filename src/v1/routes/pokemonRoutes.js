@@ -29,7 +29,7 @@ const cache = apicache.middleware;
  *                   items: 
  *                     type: object
  */
-router.get("/", cache("2 minutes"), pokemonController.getAllPokemon);
+router.get("/", pokemonController.getAllPokemon);
 
 router.get("/:pokemonId", pokemonController.getOnePokemon);
 

@@ -2,6 +2,7 @@ const pokemonService = require("../services/pokemonServices");
 
 
 const getAllPokemon = (req, res) => {
+    
     const { ability } = req.query;
     try {
         const allPokemon = pokemonService.getAllPokemon({ ability });
