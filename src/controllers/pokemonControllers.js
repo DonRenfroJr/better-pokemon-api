@@ -1,5 +1,9 @@
 const pokemonService = require("../services/pokemonServices");
 
+const getHomePage = (req, res) => {
+    res.redirect('/pokemon')
+}
+
 
 const getAllPokemon = (req, res) => {
     
@@ -137,6 +141,7 @@ const deleteOnePokemon = (req, res) => {
 };
 
 module.exports = {
+getHomePage,
 getAllPokemon,
 getOnePokemon,
 createNewPokemon,

@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 app.use(cache("2 minutes"));
 
-app.use("/pokemon", v1PokemonRouter);
+app.use("/", v1PokemonRouter);
 
 app.listen(PORT, () => { 
     console.log(`API is listening on port ${PORT}`); 
